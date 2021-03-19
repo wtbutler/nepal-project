@@ -6,7 +6,23 @@
         <title>Tibet Exploration</title>
     </head>
     <body>
-        <h1>Tibet Exploration</h1>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <script type="text/javascript" src="js/textbar.js"></script>
+
+        <!-- &#9750; = ~home symbol, &#128214; = -->
+        <div id="mySidebar" class="sidebar">
+            <a onclick="loadHome();">
+                <!--
+                <svg id="home">
+                    <use xlink:href="svgdef.svg#home" />
+                </svg>
+                -->
+                Home
+            </a>
+            <a onclick="loadGlossary();">Glossary</a>
+            <a onclick="loadBibliography();">Bibliography</a>
+            <a onclick="loadMemo();">Memo</a>
+        </div>
 
         <div id="myTextbar" class="textbar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -19,15 +35,7 @@
             </i>
         </div>
 
-        <script type="text/javascript" src="js/textbar.js"></script>
-        <div id="main">
-            <button type="button" class="openbtn" onclick="openNav();">&#9776; More Info</button>
-            <h2>Collapsed Textbar</h2>
-            <p>Content...</p>
-        </div>
-
-
-        <div class="container">
+        <div class="container" width=100% height=100%>
             <img src="tibet.png" alt="This is a map of Tibet!">
             <div id="Mustang_button" class="btn" style="top:0; left:0">
                 <svg width=100% height=100%>
