@@ -22,7 +22,7 @@ function closeNav() {
 
 function changeText(filename) {
     console.log("Opening: " + filename + ".txt");
-    var pathname = "info/"+filename+".html";
+    var pathname = "https://wtbutler.github.io/nepal-project/info/"+filename+".html";
     fetch(pathname)
         .then(response => response.text())
         .then(text => document.getElementById("desc").innerHTML = text);
