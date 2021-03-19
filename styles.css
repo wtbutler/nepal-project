@@ -1,0 +1,121 @@
+h1 {
+    color: #800202
+}
+body {
+    background-color: #ffff00
+}
+
+ /* The textbar menu */
+.textbar {
+    height: 100%; /* 100% Full-height */
+    width: 500px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: -500px;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow: hidden;
+    padding-top: 60px; /* Place content 60px from the top */
+    padding-right: 25px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the textbar */
+    opacity: 0.9;
+}
+
+.textbar:hover {
+    opacity: 1.0;
+}
+
+/* The textbar links */
+.textbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.textbar a:hover {
+    color: #f1f1f1;
+}
+
+.textbar i {
+    color: #ffffe0;
+    padding: 8px 8px 8px 32px;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.textbar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the textbar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .textbar {padding-top: 15px;}
+    .textbar a {font-size: 18px;}
+}
+
+ /* Container needed to position the button. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 100%;
+}
+
+/* Make the image responsive */
+.container img {
+    width: 100%;
+    height: auto;
+    cursor: none;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+    position: absolute;
+    background-color: none;
+    cursor: auto;
+    width: 100%;
+    height: 100%;
+}
+
+symbol {
+    pointer-events: none;
+    cursor: pointer;
+    display: inline-block;
+    z-index: 2;
+}
+symbol:hover {
+    filter: drop-shadow(1px 1px 0px orange) drop-shadow(-1px 1px 0px orange) drop-shadow(1px -1px 0px orange) drop-shadow(-1px -1px 0px orange);
+}
+symbol * {
+    pointer-events: auto;
+}
