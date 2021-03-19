@@ -21,7 +21,7 @@ function closeNav() {
 } 
 
 function loadHome() {
-    var pathname = "home/home.html";
+    var pathname = "https://wtbutler.github.io/tibet-project/home/home.html";
     fetch(pathname)
         .then(response => response.text())
         .then(text => document.getElementById("desc").innerHTML = text);
@@ -29,7 +29,7 @@ function loadHome() {
 }
 
 function loadBibliography() {
-    var pathname = "home/bibli.html";
+    var pathname = "https://wtbutler.github.io/tibet-project/home/bibli.html";
     fetch(pathname)
         .then(response => response.text())
         .then(text => document.getElementById("desc").innerHTML = text);
@@ -37,7 +37,7 @@ function loadBibliography() {
 }
 
 function loadGlossary() {
-    var pathname = "home/gloss.html";
+    var pathname = "https://wtbutler.github.io/tibet-project/home/gloss.html";
     fetch(pathname)
         .then(response => response.text())
         .then(text => document.getElementById("desc").innerHTML = text);
@@ -45,7 +45,7 @@ function loadGlossary() {
 }
 
 function loadMemo() {
-    var pathname = "home/memo.html";
+    var pathname = "https://wtbutler.github.io/tibet-project/home/memo.html";
     fetch(pathname)
         .then(response => response.text())
         .then(text => document.getElementById("desc").innerHTML = text);
