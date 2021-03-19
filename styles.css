@@ -2,8 +2,6 @@ h1 {
     color: #800202
 }
 body {
-    height: "100%";
-    width: "100%";
     background-color: #ffff00;
     margin-left: 250px;
     overflow-x: hidden;
@@ -139,6 +137,7 @@ body {
 .container {
     position: relative;
     width: 100%;
+    top: 0;
 }
 
 /* Make the image responsive */
