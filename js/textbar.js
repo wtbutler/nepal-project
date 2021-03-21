@@ -1,11 +1,7 @@
 /* Set the width of the textbar to 250px and the left margin of the page content to 250px */
 function openNav() {
     //document.getElementById("myTextbar").style.width = "250px";
-    const element = document.querySelector(".textbar");
-    const style = getComputedStyle(element)
-    const width = style.width;
     document.getElementById("myTextbar").style.right = "0px";
-    document.getElementById("main").style.marginRight = width;
     console.log("Tried to open");
 }
 
@@ -16,7 +12,6 @@ function closeNav() {
     const style = getComputedStyle(element)
     const width = style.width;
     document.getElementById("myTextbar").style.right = '-'+width;
-    document.getElementById("main").style.marginRight = "0";
     console.log("Tried to close");
 } 
 
